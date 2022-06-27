@@ -1,7 +1,23 @@
-body {
-  background-color: red;
-}
+@import "./base/reset";
+@import "./base/common";
+@import "./base/bg";
 
-main {
-  color: blue;
-}
+@import "./utils/variables";
+
+@import "./components/container";
+@import "./components/logo";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/adress";
+@import "./components/hero";
+@import "./components/btn";
+@import "./components/benefits";
+@import "./components/examples";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/regular-customers";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/samples";
+@import "./components/menu";
