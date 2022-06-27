@@ -23,7 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -452,48 +451,48 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-button" width="18" height="18">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-button" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal-filling-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <div class="form-modal-filling">
-            <div class="modal-filling-label-wrap">
-              <label for="name" class="modal-filling-label">Имя</label>
+          <div class="modal__filling">
+            <div>
+              <label for="name" class="modal__label">Имя</label>
             </div>
-            <div class="input-wrap">
+            <div class="modal__wrap">
               <input type="text" class="modal-filling-input" id="name" name="user-name" />
               <svg class="modal-filling-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
-          <div class="form-modal-filling">
-            <div class="modal-filling-label-wrap">
-              <label for="tel" class="modal-filling-label">Телефон</label>
+          <div class="modal__filling">
+            <div>
+              <label for="tel" class="modal__label">Телефон</label>
             </div>
-            <div class="input-wrap">
+            <div class="modal__wrap">
               <input type="tel" class="modal-filling-input" id="tel" name="user-tel" />
               <svg class="modal-filling-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
-          <div class="form-modal-filling">
-            <div class="modal-filling-label-wrap">
-              <label for="email" class="modal-filling-label">Почта</label>
+          <div class="modal__filling">
+            <div>
+              <label for="email" class="modal__label">Почта</label>
             </div>
-            <div class="input-wrap">
+            <div class="modal__wrap">
               <input type="email" class="modal-filling-input" id="email" name="user-email" />
               <svg class="modal-filling-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-filling-label-wrap">
-            <label for="comment" class="modal-filling-label">Коменнтарий</label>
+          <div class="modal__filling-wrap">
+            <label for="comment" class="modal__label">Коменнтарий</label>
           </div>
           <textarea
             name="comment"
@@ -501,7 +500,7 @@
             class="modal-filling-comment"
             placeholder="Введите текст"
           ></textarea>
-          <div class="input-wrap-checkbox">
+          <div class="modal__wrap-checkbox">
             <input
               type="checkbox"
               name="terms"
@@ -516,7 +515,7 @@
             >
           </div>
           <div class="modal-filling-flex-submit">
-            <button type="submit" class="modal-filling-submit">Отправить</button>
+            <button type="submit" class="modal-submit">Отправить</button>
           </div>
         </form>
       </div>
@@ -524,4 +523,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-flafj

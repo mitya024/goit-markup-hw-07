@@ -4,8 +4,7 @@
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.menu-btn__iteam:not(:last-child) {
-  margin-right: 8px;
+  &__iteam:not(:last-child) {
+    margin-right: 8px;
+  }
 }
