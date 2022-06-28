@@ -86,7 +86,7 @@ body {
   /* outline: 1px solid red; */
 }
 
-.header__logo {
+.logo, .logo-footer, .header__logo {
   display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -94,28 +94,30 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   color: var(--main-text-color);
-  margin-right: 93px;
 }
 .header__logo > span {
   color: var(--main-focus-text-blue);
 }
 
 .logo-footer {
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
   color: var(--main-white-color);
 }
 .logo-footer > span {
   color: var(--main-focus-text-blue);
+}
+
+.header__logo--margin {
+  margin-right: 93px;
+}
+
+.logo-footer--margin {
+  margin-bottom: 20px;
 }
 
 .nav {
@@ -170,13 +172,17 @@ body {
   color: var(--main-focus-text-blue);
 }
 
+.contacts--margin {
+  margin-left: auto;
+}
+
+.contacts__list--margin:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts {
   display: flex;
   align-items: center;
-  margin-left: auto;
-}
-.contacts__list:not(:last-child) {
-  margin-right: 50px;
 }
 .contacts__link {
   display: flex;
@@ -360,11 +366,10 @@ body {
   height: auto;
 }
 .examples__title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 .examples__list {
@@ -377,6 +382,10 @@ body {
   position: relative;
 }
 .examples__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   position: absolute;
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0px;
@@ -384,10 +393,6 @@ body {
   height: 70px;
   color: var(--main-white-color);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,9 +825,18 @@ body {
   cursor: text;
 }
 
-.footer-contacts {
+.footer-contacts--margin {
   margin-left: 70px;
 }
+
+.footer-contacts__text--margin {
+  margin-bottom: 20px;
+}
+
+.footer-contacts__item--margin:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-contacts__text {
   font-family: "Roboto";
   font-style: normal;
@@ -831,7 +845,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 .footer-contacts__list {
   display: flex;
@@ -843,9 +856,6 @@ body {
   justify-content: center;
   width: 44px;
   height: 44px;
-}
-.footer-contacts__item:not(:last-child) {
-  margin-right: 10px;
 }
 .footer-contacts__icon {
   fill: var(--main-white-color);
