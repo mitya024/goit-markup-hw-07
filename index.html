@@ -28,9 +28,7 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a class="header__logo header__logo--margin" href="./index.html"
-            ><span>Web</span>Studio</a
-          >
+          <a class="logo logo__header" href="./index.html"><span>Web</span>Studio</a>
           <ul class="navigation list-none">
             <li class="navigation__iteam">
               <a class="navigation__link current" href="./index.html">Студия</a>
@@ -67,7 +65,7 @@
       <section class="bg-main">
         <div class="container">
           <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn-main" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -376,7 +374,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <a class="logo-footer logo-footer--margin" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo logo__footer" href="./index.html"><span>Web</span>Studio</a>
           <address>
             <ul class="adress list-none">
               <li class="adress__iteam">
@@ -431,8 +429,8 @@
         </div>
         <div class="subscribe-block">
           <p class="subscribe-block__tittle">Подпишитесь на рассылку</p>
-          <form class="subscribe-block-form">
-            <label for="subscribe-input" class="subscribe-block-label"></label>
+          <form>
+            <label for="subscribe-input"></label>
             <input
               type="email"
               class="subscribe-input"
@@ -440,9 +438,9 @@
               id="subscribe-input"
               placeholder="E-mail"
             />
-            <button type="button" class="subscribe-block-button">
-              <span class="subscribe-block-button-tittle">Подписаться</span>
-              <svg class="subscribe-block-icon" width="24" height="24">
+            <button type="button" class="subscribe-button">
+              <span>Подписаться</span>
+              <svg class="subscribe-button__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -517,7 +515,7 @@
             >
           </div>
           <div class="modal-filling-flex-submit">
-            <button type="submit" class="modal-submit">Отправить</button>
+            <button type="submit" class="button">Отправить</button>
           </div>
         </form>
       </div>

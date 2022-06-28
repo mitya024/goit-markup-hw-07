@@ -23,9 +23,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="header__logo header__logo--margin" href="./index.html"
-          ><span>Web</span>Studio</a
-        >
+        <a class="logo logo__header" href="./index.html"><span>Web</span>Studio</a>
         <nav class="nav">
           <ul class="navigation list-none">
             <li class="navigation__iteam">
@@ -39,15 +37,15 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts list-none">
-          <li class="contacts__list">
+        <ul class="contacts contacts--margin list-none">
+          <li class="contacts__list--margin">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               ><svg class="icons-envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts__list">
+          <li class="contacts__list--margin">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="icons-tel" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
@@ -230,9 +228,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <a class="logo-footer logo-footer--margin" href="./index.html"
-            ><span>Web</span>Studio</a
-          >
+          <a class="logo logo__footer" href="./index.html"><span>Web</span>Studio</a>
           <address>
             <ul class="adress list-none">
               <li class="adress__iteam">
@@ -287,8 +283,8 @@
         </div>
         <div class="subscribe-block">
           <p class="subscribe-block__tittle">Подпишитесь на рассылку</p>
-          <form class="subscribe-block-form">
-            <label for="subscribe-input" class="subscribe-block-label"></label>
+          <form>
+            <label for="subscribe-input"></label>
             <input
               type="email"
               class="subscribe-input"
@@ -296,9 +292,9 @@
               id="subscribe-input"
               placeholder="E-mail"
             />
-            <button type="button" class="subscribe-block-button">
-              <span class="subscribe-block-button-tittle">Подписаться</span>
-              <svg class="subscribe-block-icon" width="24" height="24">
+            <button type="button" class="subscribe-block">
+              <span class="subscribe-block__tittle">Подписаться</span>
+              <svg class="subscribe-block__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

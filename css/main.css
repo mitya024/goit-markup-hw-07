@@ -86,7 +86,7 @@ body {
   /* outline: 1px solid red; */
 }
 
-.logo, .logo-footer, .header__logo {
+.logo, .logo__footer, .logo__header {
   display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -95,28 +95,19 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.logo > span, .logo__footer > span, .logo__header > span {
+  color: var(--main-focus-text-blue);
+}
 
-.header__logo {
+.logo__header {
   padding-top: 24px;
   padding-bottom: 25px;
   color: var(--main-text-color);
-}
-.header__logo > span {
-  color: var(--main-focus-text-blue);
-}
-
-.logo-footer {
-  color: var(--main-white-color);
-}
-.logo-footer > span {
-  color: var(--main-focus-text-blue);
-}
-
-.header__logo--margin {
   margin-right: 93px;
 }
 
-.logo-footer--margin {
+.logo__footer {
+  color: var(--main-white-color);
   margin-bottom: 20px;
 }
 
@@ -170,6 +161,27 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-focus-text-blue);
+}
+
+.button, .subscribe-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-focus-text-blue);
+  color: var(--main-white-color);
+  border-color: var(--main-focus-text-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 12px;
 }
 
 .contacts--margin {
@@ -252,27 +264,6 @@ body {
   color: var(--main-white-color);
   text-align: center;
   margin-bottom: 30px;
-}
-
-.btn-main, .subscribe-block-button, .modal-submit {
-  width: 200px;
-  height: 50px;
-  background-color: var(--main-focus-text-blue);
-  color: var(--main-white-color);
-  border-color: var(--main-focus-text-blue);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.subscribe-block-button {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  margin-left: 12px;
 }
 
 .btn {
@@ -797,7 +788,7 @@ body {
   text-transform: uppercase;
 }
 
-.subscribe-block-icon {
+.subscribe-button__icon {
   margin-left: 10px;
 }
 

@@ -6,26 +6,19 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  & > span {
+    color: var(--main-focus-text-blue);
+  }
 }
-.header__logo {
+.logo__header {
   @extend .logo;
   padding-top: 24px;
   padding-bottom: 25px;
   color: var(--main-text-color);
-  & > span {
-    color: var(--main-focus-text-blue);
-  }
-}
-.logo-footer {
-  @extend .logo;
-  color: var(--main-white-color);
-  & > span {
-    color: var(--main-focus-text-blue);
-  }
-}
-.header__logo--margin {
   margin-right: 93px;
 }
-.logo-footer--margin {
+.logo__footer {
+  @extend .logo;
+  color: var(--main-white-color);
   margin-bottom: 20px;
 }
