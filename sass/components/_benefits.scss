@@ -35,6 +35,6 @@
 }
 @each $icons in antenna, clock, diagram, astronaut {
   .icon-#{$icons}::before {
-    background-image: url("/images/#{$icons}.svg");
+    background-image: url("../images/#{$icons}.svg");
   }
 }
