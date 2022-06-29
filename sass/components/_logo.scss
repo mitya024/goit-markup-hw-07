@@ -9,16 +9,16 @@
   & > span {
     color: var(--main-focus-text-blue);
   }
-}
-.logo__header {
-  @extend .logo;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  color: var(--main-text-color);
-  margin-right: 93px;
-}
-.logo__footer {
-  @extend .logo;
-  color: var(--main-white-color);
-  margin-bottom: 20px;
+  &__header {
+    @extend .logo;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--main-text-color);
+    margin-right: 93px;
+  }
+  &__footer {
+    @extend .logo;
+    color: var(--main-white-color);
+    margin-bottom: 20px;
+  }
 }
