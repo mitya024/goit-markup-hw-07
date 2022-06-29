@@ -42,11 +42,7 @@
     }
   }
   &__text {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include fonts(700, 20px, 1.15, 0.03em);
     color: var(--main-text-color);
     margin-bottom: 12px;
     text-align: center;
@@ -55,10 +51,7 @@
     margin-bottom: 4px;
   }
   &__label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include fonts(400, 12px, 1.16, 0.01em);
     text-align: left;
     display: block;
     color: var(--color-contact);
@@ -110,9 +103,7 @@
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include fonts(null, 14px, 1.14, 0.01em);
   outline: none;
   transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,9 +117,7 @@
 }
 
 .terms-tittle {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include fonts(null, 14px, 1.7, 0.03em);
   color: var(--color-contact);
   display: flex;
   align-items: center;

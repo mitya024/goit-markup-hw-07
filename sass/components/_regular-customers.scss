@@ -28,10 +28,7 @@
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  @include fonts(700, 36px, 1.16, 0.03em);
 }
 .regular-clients {
   padding: 94px 0px;
